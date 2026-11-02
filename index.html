@@ -1,74 +1,30 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="그래프, 현미경 사진, 이미지 분석과 실험 데이터 해석, 탐구를 돕는 사이언스곰 도구 모음.">
-<meta name="theme-color" content="#f7f8fa">
-<title>사이언스곰 툴</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사이언스곰 툴 | ScienceGOM Tools</title>
+<meta name="description" content="그래프와 이미지 분석, 실험 데이터 해석, 탐구 설계를 위한 사이언스곰 도구 모음.">
+<meta name="theme-color" content="#183e34">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#f7f8fa;color:#202b3c;font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif;word-break:keep-all}
-.wrap{max-width:1060px;margin:auto;padding:0 28px}
-header{border-bottom:1px solid #e5e9ef;background:#fff}
-.brand{display:flex;align-items:center;gap:10px;height:78px;font-size:18px;font-weight:750}
-.bear{font-size:28px}
-main{padding-top:64px;padding-bottom:64px}
-h1{font-size:36px;letter-spacing:-1.5px;margin:0 0 14px;line-height:1.3}
-.intro{color:#647084;font-size:16px;margin:0;line-height:1.7}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:36px}
-.card{display:flex;flex-direction:column;align-items:flex-start;min-height:254px;padding:28px;background:#fff;border:1px solid #e2e7ee;border-radius:20px;text-decoration:none;color:inherit;transition:transform .18s,border-color .18s,box-shadow .18s}
-.card:hover{transform:translateY(-4px);border-color:#abbccc;box-shadow:0 12px 30px #2536530c}
-.card:focus-visible{outline:3px solid #2464b3;outline-offset:5px}
-.icon{width:60px;height:60px;display:grid;place-items:center;font-size:30px;border-radius:17px;margin-bottom:24px}
-.blue{background:#eaf2ff}.green{background:#e9f6f0}.orange{background:#fff0e8}.purple{background:#f0ecfd}.yellow{background:#fff7db}
-h2{font-size:19px;letter-spacing:-.6px;margin:0 0 10px}
-.card p{color:#657084;font-size:14px;line-height:1.75;margin:0 0 24px}
-.open{font-size:13px;font-weight:650;color:#465b74;margin-top:auto;display:flex;justify-content:space-between;width:100%}
-.arrow{font-size:18px;line-height:1}
-.note{margin-top:25px;color:#758093;font-size:12px}
-footer{border-top:1px solid #e1e6ed;padding:24px 0 32px;color:#7b8594;font-size:12px}
-@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.wrap{padding:0 20px}.brand{height:68px}main{padding-top:38px;padding-bottom:40px}h1{font-size:29px}.grid{grid-template-columns:1fr;gap:14px;margin-top:28px}.card{padding:24px;min-height:224px}.icon{margin-bottom:20px}}
-@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
-</style>
-</head>
-<body>
-<header><div class="wrap brand"><span class="bear" aria-hidden="true">🐻</span>사이언스곰</div></header>
-<div class="wrap">
-<main>
-<h1>사이언스곰 툴</h1>
-<p class="intro">필요한 도구를 골라 사용하세요.</p>
-<nav class="grid" aria-label="과학 탐구 도구">
-<a class="card" href="https://graph-analyzer-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="그래프 분석기 (새 탭에서 열기)">
-<span class="icon blue" aria-hidden="true">📈</span>
-<h2>그래프 분석기</h2><p>데이터를 그래프로 나타내고 변화와 관계를 분석합니다.</p>
-<span class="open" aria-hidden="true">열기 <span class="arrow">↗</span></span>
-</a>
-<a class="card" href="https://sciencegom.github.io/microscope-analyzer/" target="_blank" rel="noopener noreferrer" aria-label="현미경 분석기 (새 탭에서 열기)">
-<span class="icon green" aria-hidden="true">🔬</span>
-<h2>현미경 분석기</h2><p>현미경 사진에서 길이와 면적을 측정합니다.</p>
-<span class="open" aria-hidden="true">열기 <span class="arrow">↗</span></span>
-</a>
-<a class="card" href="https://sciencegom.github.io/color-target-analyzer/" target="_blank" rel="noopener noreferrer" aria-label="이미지타겟 분석기 (새 탭에서 열기)">
-<span class="icon orange" aria-hidden="true">🎯</span>
-<h2>이미지타겟 분석기</h2><p>사진의 색상을 구분해 영역 비율과 개체 수를 분석합니다.</p>
-<span class="open" aria-hidden="true">열기 <span class="arrow">↗</span></span>
-</a>
-<a class="card" href="https://script.google.com/macros/s/AKfycbygZARWPJnHzYGsF3f7v5RcOXwRe_tRkuInQmE8odH2A2goZempV5LvAwAOn1A2rviF/exec" target="_blank" rel="noopener noreferrer" aria-label="실험데이터 해석코치 (새 탭에서 열기)">
-<span class="icon purple" aria-hidden="true">🧪</span>
-<h2>실험데이터 해석코치</h2><p>실험 데이터를 살펴보고 결과 해석을 돕습니다.</p>
-<span class="open" aria-hidden="true">열기 <span class="arrow">↗</span></span>
-</a>
-<a class="card" href="https://script.google.com/macros/s/AKfycbxPTmgMfaL9dWhmnXe2L0ya3fyqICJQm4F66F0yJ683loAlfZLS-oj88Ywb_ovhaWeT/exec" target="_blank" rel="noopener noreferrer" aria-label="What if 탐구컨설턴트 (새 탭에서 열기)">
-<span class="icon yellow" aria-hidden="true">💡</span>
-<h2>What if 탐구컨설턴트</h2><p>‘만약에?’라는 질문을 바탕으로 탐구 방향을 잡습니다.</p>
-<span class="open" aria-hidden="true">열기 <span class="arrow">↗</span></span>
-</a>
-</nav>
-<p class="note">모든 도구는 새 탭에서 열립니다.</p>
-</main>
-<footer>사이언스곰 · 과학 탐구 도구 모음</footer>
-</div>
-</body>
-</html>
+:root{--paper:#f8f9f5;--ink:#183e34;--muted:#627166;--line:#dce3db;--accent:#d7ed9b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Noto Sans KR','Malgun Gothic',sans-serif;word-break:keep-all;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 80px));margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;height:88px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-size:19px;font-weight:800;letter-spacing:-.7px}.brand svg{width:35px;height:35px}.brand b{font-weight:400}.header-note{font-size:11px;color:var(--muted);letter-spacing:.8px}
+.intro{padding:52px 0 38px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px}.eyebrow{font-size:10px;font-weight:600;letter-spacing:2px;color:#697c5b;margin:0 0 12px}.eyebrow:before{content:'';display:inline-block;width:6px;height:6px;background:#7c935e;border-radius:50%;margin-right:9px}h1{font-size:40px;line-height:1.4;letter-spacing:-1.8px;margin:0 0 10px;font-weight:800}.intro p:last-child{color:var(--muted);font-size:14px;margin:0}.count{font-family:Georgia,serif;font-size:52px;line-height:1;color:#82916d}.count small{font-family:'Noto Sans KR',sans-serif;font-size:10px;letter-spacing:1px;margin-left:10px;vertical-align:middle;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:22px;padding-bottom:28px}.card{grid-column:span 2;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}.card:nth-child(n+4){grid-column:span 3}.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #183e3410;border-color:#a6b69b}.visual{height:176px;border-bottom:1px solid var(--line);overflow:hidden}.visual svg{display:block;width:100%;height:100%;object-fit:cover}.card:nth-child(4) .visual{background:#e4eceb}.card:nth-child(5) .visual{background:#e6e9ef}.body{padding:23px 24px 20px;display:flex;flex-direction:column;flex:1}.category{color:#6a7d5d;font-size:10px;letter-spacing:.3px;margin:0 0 9px}h2{font-size:19px;letter-spacing:-.8px;margin:0 0 9px;font-weight:700}.description{font-size:13px;line-height:1.85;color:var(--muted);margin:0 0 22px}.bottom{border-top:1px solid #e9eee7;display:flex;align-items:center;justify-content:space-between;padding-top:14px;margin-top:auto;font-size:11px;font-weight:600}.arrow{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:#eef3e7;font-size:15px;transition:background .2s}.card:hover .arrow{background:var(--accent)}.note{font-size:11px;color:var(--muted);margin:0 0 35px}footer{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:22px 0 28px;font-size:10px;color:var(--muted)}footer strong{font-weight:500;letter-spacing:1px}a:focus-visible{outline:3px solid #477e24;outline-offset:5px}.skip{position:absolute;top:-100px;padding:12px;background:var(--ink);color:white;z-index:2}.skip:focus{top:10px}
+@media(max-width:900px){.wrap{width:calc(100% - 48px)}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card,.card:nth-child(n+4){grid-column:span 1}.card:last-child{grid-column:1/-1}.body{padding:21px}.visual{height:170px}}
+@media(max-width:560px){.wrap{width:calc(100% - 36px)}header{height:72px}.brand{font-size:17px}.brand svg{width:30px;height:30px}.header-note{display:none}.intro{padding:34px 0 26px}h1{font-size:31px}.count{display:none}.grid{grid-template-columns:1fr;gap:18px}.card:last-child{grid-column:auto}.visual{height:174px}.body{padding:22px}.description{font-size:13px}.eyebrow{font-size:9px}footer{gap:12px;flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.card,.arrow{transition:none}.card:hover{transform:none}}
+</style></head>
+<body><a class="skip" href="#tools">도구 목록으로 바로가기</a>
+<div class="wrap"><header><a class="brand" href="./" aria-label="사이언스곰 툴 홈"><span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="11" fill="#183e34"/><g fill="none" stroke="#d7ed9b" stroke-width="1.4"><ellipse cx="20" cy="20" rx="14" ry="6" transform="rotate(45 20 20)"/><ellipse cx="20" cy="20" rx="14" ry="6" transform="rotate(-45 20 20)"/></g><circle cx="20" cy="20" r="3" fill="#d7ed9b"/></svg></span><span>ScienceGOM <b>Tools</b></span></a><span class="header-note">사이언스곰 · 과학 탐구 도구</span></header>
+<main><section class="intro" aria-labelledby="title"><div><p class="eyebrow">SCIENCEGOM TOOL COLLECTION</p><h1 id="title">사이언스곰 툴</h1><p>필요한 도구를 골라 사용하세요.</p></div><div class="count" aria-hidden="true">05<small>TOOLS</small></div></section>
+<nav id="tools" class="grid" aria-label="과학 탐구 도구">
+<a class="card" href="https://graph-analyzer-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="그래프 분석기 (새 탭에서 열기)"><div class="visual" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320"><defs><pattern id="grid-0" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#fff" stroke-opacity=".35"/></pattern></defs><rect width="640" height="320" fill="#e2ebe2"/><rect width="640" height="320" fill="url(#grid-0)"/><rect x="155" y="48" width="330" height="232" rx="6" fill="#f5f8ef" stroke="#b7c9b6"/><g stroke="#dce5d5"><path d="M196 100h249M196 145h249M196 190h249"/></g><path d="M196 78v163h249" fill="none" stroke="#8aa28a"/><path d="M209 217Q290 220 322 161T431 91" fill="none" stroke="#294f3c" stroke-width="3"/><g fill="#7c9b56" stroke="#f5f8ef" stroke-width="3"><circle cx="219" cy="214" r="6"/><circle cx="263" cy="204" r="6"/><circle cx="306" cy="185" r="6"/><circle cx="348" cy="126" r="6"/><circle cx="390" cy="106" r="6"/><circle cx="430" cy="86" r="6"/></g><text x="50" y="42" fill="#52705a" font-family="monospace" font-size="10">01 / ANALYZE</text><text x="419" y="263" fill="#788a6d" font-family="monospace" font-size="11">x →</text></svg></div><div class="body"><p class="category">그래프 · 데이터</p><h2>그래프 분석기</h2><p class="description">데이터를 그래프로 나타내고 변화와 관계를 분석합니다.</p><div class="bottom" aria-hidden="true"><span>도구 열기</span><span class="arrow">↗</span></div></div></a>
+<a class="card" href="https://sciencegom.github.io/microscope-analyzer/" target="_blank" rel="noopener noreferrer" aria-label="현미경 분석기 (새 탭에서 열기)"><div class="visual" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320"><defs><pattern id="grid-1" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity=".3"/></pattern></defs><rect width="640" height="320" fill="#e4eddf"/><rect width="640" height="320" fill="url(#grid-1)"/><circle cx="320" cy="160" r="115" fill="#f1f5e9" stroke="#b4c4a7"/><g fill="#b1c795" stroke="#6f9160" stroke-width="2"><ellipse cx="290" cy="145" rx="55" ry="24" transform="rotate(-30 290 145)"/><ellipse cx="361" cy="184" rx="41" ry="21" transform="rotate(35 361 184)"/><ellipse cx="352" cy="93" rx="26" ry="16"/></g><g fill="none" stroke="#315c40" stroke-width="1.5"><path d="M232 171L334 112M230 163l7 13m93-70l7 13M242 247h75m-75-5v10m75-10v10"/></g><g fill="#315c40" font-family="monospace" font-size="12"><text x="243" y="113">128.4 μm</text><text x="251" y="270">50 μm</text><text x="50" y="51" font-size="10">02 / MEASURE</text></g></svg></div><div class="body"><p class="category">이미지 · 측정</p><h2>현미경 분석기</h2><p class="description">현미경 사진에서 길이와 면적을 측정합니다.</p><div class="bottom" aria-hidden="true"><span>도구 열기</span><span class="arrow">↗</span></div></div></a>
+<a class="card" href="https://sciencegom.github.io/color-target-analyzer/" target="_blank" rel="noopener noreferrer" aria-label="이미지타겟 분석기 (새 탭에서 열기)"><div class="visual" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320"><defs><pattern id="grid-2" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity=".3"/></pattern></defs><rect width="640" height="320" fill="#ececdb"/><rect width="640" height="320" fill="url(#grid-2)"/><rect x="171" y="47" width="298" height="230" rx="7" fill="#f5f4e8" stroke="#bdc7a4"/><g fill="#8d9e5c" stroke="#617e3a" stroke-width="2"><ellipse cx="239" cy="107" rx="27" ry="19" transform="rotate(-25 239 107)"/><ellipse cx="342" cy="116" rx="31" ry="24"/><ellipse cx="405" cy="185" rx="22" ry="28" transform="rotate(25 405 185)"/><ellipse cx="281" cy="211" rx="34" ry="20"/><ellipse cx="222" cy="178" rx="19" ry="13"/></g><g fill="none" stroke="#a1b97a" stroke-dasharray="4 3"><rect x="204" y="77" width="72" height="61"/><rect x="302" y="84" width="80" height="65"/><rect x="369" y="149" width="70" height="75"/><rect x="239" y="180" width="81" height="60"/></g><rect x="363" y="237" width="132" height="35" rx="5" fill="#284d38"/><text x="377" y="259" fill="#edf3db" font-size="13" font-family="monospace">AREA  32.8%</text><text x="50" y="51" fill="#587244" font-size="10" font-family="monospace">03 / QUANTIFY</text></svg></div><div class="body"><p class="category">이미지 · 색상 분석</p><h2>이미지타겟 분석기</h2><p class="description">사진의 색상을 구분해 영역 비율과 개체 수를 분석합니다.</p><div class="bottom" aria-hidden="true"><span>도구 열기</span><span class="arrow">↗</span></div></div></a>
+<a class="card" href="https://script.google.com/macros/s/AKfycbygZARWPJnHzYGsF3f7v5RcOXwRe_tRkuInQmE8odH2A2goZempV5LvAwAOn1A2rviF/exec" target="_blank" rel="noopener noreferrer" aria-label="실험데이터 해석코치 (새 탭에서 열기)"><div class="visual" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320"><defs><pattern id="grid-3" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity=".3"/></pattern></defs><rect width="640" height="320" fill="#e4eceb"/><rect width="640" height="320" fill="url(#grid-3)"/><rect x="157" y="61" width="291" height="212" rx="7" fill="#f4f8f5" stroke="#c3d2cd"/><g stroke="#e1e9e3"><path d="M197 111h214M197 152h214M197 193h214"/></g><path d="M197 91v145h213" fill="none" stroke="#93aaa1"/><path d="M209 209L252 185L291 193L337 146L391 106" stroke="#4a8171" stroke-width="3" fill="none"/><g fill="#4a8171"><circle cx="209" cy="209" r="4"/><circle cx="252" cy="185" r="4"/><circle cx="291" cy="193" r="4"/><circle cx="337" cy="146" r="4"/><circle cx="391" cy="106" r="4"/></g><rect x="358" y="178" width="134" height="64" rx="10" fill="#244f44"/><text x="378" y="204" fill="#d7ed9b" font-size="16">✦</text><path d="M402 199h68m-68 11h48m-78 13h98" stroke="#a5c1b7" stroke-width="3"/><text x="50" y="51" fill="#4b7265" font-size="10" font-family="monospace">04 / INTERPRET</text></svg></div><div class="body"><p class="category">실험 · 결과 해석</p><h2>실험데이터 해석코치</h2><p class="description">실험 데이터를 살펴보고 결과 해석을 돕습니다.</p><div class="bottom" aria-hidden="true"><span>도구 열기</span><span class="arrow">↗</span></div></div></a>
+<a class="card" href="https://script.google.com/macros/s/AKfycbxPTmgMfaL9dWhmnXe2L0ya3fyqICJQm4F66F0yJ683loAlfZLS-oj88Ywb_ovhaWeT/exec" target="_blank" rel="noopener noreferrer" aria-label="What if 탐구컨설턴트 (새 탭에서 열기)"><div class="visual" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320"><defs><pattern id="grid-4" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity=".3"/></pattern></defs><rect width="640" height="320" fill="#e6e9ef"/><rect width="640" height="320" fill="url(#grid-4)"/><circle cx="320" cy="160" r="91" fill="none" stroke="#b5bdca" stroke-dasharray="5 7"/><path d="M229 160h182M320 69v182" stroke="#c9d0db"/><circle cx="230" cy="160" r="32" fill="#f5f7fa" stroke="#aab9be"/><circle cx="409" cy="160" r="32" fill="#f5f7fa" stroke="#aab9be"/><circle cx="320" cy="160" r="40" fill="#f5f7fa"/><rect x="282" y="122" width="76" height="76" rx="22" fill="#354f55"/><g font-family="Georgia" font-size="32" text-anchor="middle"><text x="230" y="171" fill="#6a8288">X</text><text x="409" y="171" fill="#6a8288">Y</text><text x="320" y="174" fill="#deedcc" font-size="44">?</text></g><text x="50" y="51" fill="#5a7182" font-size="10" font-family="monospace">05 / ASK &amp; EXPLORE</text></svg></div><div class="body"><p class="category">질문 · 탐구 설계</p><h2>What if 탐구컨설턴트</h2><p class="description">‘만약에?’라는 질문을 바탕으로 탐구 방향을 잡습니다.</p><div class="bottom" aria-hidden="true"><span>도구 열기</span><span class="arrow">↗</span></div></div></a>
+</nav><p class="note">모든 도구는 새 탭에서 열립니다.</p></main><footer><strong>SCIENCEGOM TOOLS</strong><span>과학 탐구 도구 모음</span></footer></div></body></html>
